@@ -1,0 +1,35 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 22px 0;
+}
+
+.brand {
+    color: var(--ink);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
