@@ -16,7 +16,7 @@
                 Northline
             </a>
             <nav class="site-nav" id="siteNav" aria-label="Primary">
-                <a href="#services" data-section="services">Our Services</a>
+                <a href="#services" data-section="services">Their Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
                 <a href="#results" data-section="results">Results</a>
                 <a href="#contact" data-section="contact">Contact</a>
