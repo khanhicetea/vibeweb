@@ -16,7 +16,7 @@
                 Northline
             </a>
             <nav class="site-nav" id="siteNav" aria-label="Primary">
-                <a href="#services" data-section="services">Services</a>
+                <a href="#services" data-section="services">Marketing Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
                 <a href="#results" data-section="results">Results</a>
                 <a href="#contact" data-section="contact">Contact</a>
@@ -25,7 +25,7 @@
                 <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
-                <a class="btn btn-primary" href="#contact">Book a call</a>
+                <a class="btn btn-primary" href="#contact">Book a call now</a>
             </div>
         </div>
     </header>
