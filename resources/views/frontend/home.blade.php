@@ -16,7 +16,7 @@
                 Northline
             </a>
             <nav class="site-nav" id="siteNav" aria-label="Primary">
-                <a href="#services" data-section="services">Our Services</a>
+                <a href="#services" data-section="services">Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
                 <a href="#results" data-section="results">Results</a>
                 <a href="#contact" data-section="contact">Contact</a>
@@ -43,7 +43,7 @@
         </div>
         <div class="hero-grid">
             <div class="hero-copy">
-                <p class="eyebrow rv">Marketing consulting</p>
+                <p class="eyebrow rv">Digital Marketing consulting</p>
                 <h1 class="hero-title rv d1">
                     Clarity for brands
                     <em>ready to grow.</em>
