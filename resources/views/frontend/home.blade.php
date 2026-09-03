@@ -1,6 +1,6 @@
 <x-layouts.public
     title="NorthPoints"
-    description="Northline helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
+    description="NorthPoints helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
     hide-header
     body-class="home-page"
     home-page
@@ -13,7 +13,7 @@
         <div class="site-header-inner">
             <a class="brand" href="{{ route('home') }}">
                 <span class="brand-mark" aria-hidden="true">N</span>
-                Northline
+                NorthPoints
             </a>
             <nav class="site-nav" id="siteNav" aria-label="Primary">
                 <a href="#services" data-section="services">Marketing Services</a>
@@ -49,7 +49,7 @@
                     <em>ready to grow.</em>
                 </h1>
                 <p class="hero-lead rv d2">
-                    Northline helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what actually moves revenue.
+                    NorthPoints helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what actually moves revenue.
                 </p>
                 <div class="hero-actions rv d2">
                     <a class="btn btn-primary" href="#contact">Start a project</a>
@@ -171,7 +171,7 @@
             <div class="footer-brand">
                 <span class="brand-mark" aria-hidden="true">N</span>
                 <div>
-                    <strong>Northline Marketing</strong>
+                    <strong>NorthPoints</strong>
                     <span>Strategy &amp; growth consulting</span>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <p class="footer-copy">© {{ date('Y') }} Northline Marketing. All rights reserved.</p>
+            <p class="footer-copy">© {{ date('Y') }} NorthPoints. All rights reserved.</p>
         </div>
     </footer>
 </x-layouts.public>
