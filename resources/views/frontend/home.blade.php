@@ -1,6 +1,6 @@
 <x-layouts.public
-    title="NorthPoints"
-    description="NorthPoints helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
+    title="Astral"
+    description="Astral helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
     hide-header
     body-class="home-page"
     home-page
@@ -12,8 +12,8 @@
     <header class="site-header">
         <div class="site-header-inner">
             <a class="brand" href="{{ route('home') }}">
-                <span class="brand-mark" aria-hidden="true">N</span>
-                NorthPoints
+                <span class="brand-mark" aria-hidden="true">A</span>
+                Astral
             </a>
             <nav class="site-nav" id="siteNav" aria-label="Primary">
                 <a href="#services" data-section="services">Marketing Services</a>
@@ -33,7 +33,7 @@
     <section id="main-content" class="hero">
         <div class="hero-backdrop" aria-hidden="true">
             <img
-                src="https://picsum.photos/seed/northline-hero/1920/1080"
+                src="https://picsum.photos/seed/astral-hero/1920/1080"
                 alt=""
                 width="1920"
                 height="1080"
@@ -49,7 +49,7 @@
                     <em>ready to grow.</em>
                 </h1>
                 <p class="hero-lead rv d2">
-                    NorthPoints helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what actually moves revenue.
+                    Astral helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what actually moves revenue.
                 </p>
                 <div class="hero-actions rv d2">
                     <a class="btn btn-primary" href="#contact">Start a project</a>
@@ -171,7 +171,7 @@
             <div class="footer-brand">
                 <span class="brand-mark" aria-hidden="true">N</span>
                 <div>
-                    <strong>NorthPoints</strong>
+                    <strong>Astral</strong>
                     <span>Strategy &amp; growth consulting</span>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <p class="footer-copy">© {{ date('Y') }} NorthPoints. All rights reserved.</p>
+            <p class="footer-copy">© {{ date('Y') }} Astral. All rights reserved.</p>
         </div>
     </footer>
 </x-layouts.public>
