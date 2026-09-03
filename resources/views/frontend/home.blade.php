@@ -159,7 +159,7 @@
                     <p class="section-lead">Share where you are today and where you want to be. You'll get a concise recommendation within two business days.</p>
                 </div>
                 <div class="cta-actions">
-                    <a class="btn btn-primary" href="mailto:hello@northline.marketing">hello@northline.marketing</a>
+                    <a class="btn btn-primary" href="mailto:hello@astral.marketing">hello@astral.marketing</a>
                     <a class="btn btn-ghost" href="tel:+13128471928">+1 (312) 847-1928</a>
                 </div>
             </div>
