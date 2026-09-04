@@ -9,26 +9,17 @@
 
     <div class="page-grain" aria-hidden="true"></div>
 
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a class="brand" href="{{ route('home') }}">
-                <span class="brand-mark" aria-hidden="true">N</span>
-                Northline
-            </a>
-            <nav class="site-nav" id="siteNav" aria-label="Primary">
-                <a href="#services" data-section="services">Marketing Services</a>
-                <a href="#approach" data-section="approach">Approach</a>
-                <a href="#results" data-section="results">Results</a>
-                <a href="#contact" data-section="contact">Contact</a>
-            </nav>
-            <div class="header-actions">
-                <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-                <a class="btn btn-primary" href="#contact">Book a call now</a>
-            </div>
-        </div>
-    </header>
+    <x-frontend.site-header
+        :nav="[
+            ['label' => 'Marketing Services', 'href' => '#services', 'section' => 'services'],
+            ['label' => 'Approach', 'href' => '#approach', 'section' => 'approach'],
+            ['label' => 'Results', 'href' => '#results', 'section' => 'results'],
+            ['label' => 'Contact', 'href' => '#contact', 'section' => 'contact'],
+            ['label' => 'Careers', 'href' => route('recruit')],
+        ]"
+        cta-label="Book a call now"
+        cta-href="#contact"
+    />
 
     <section id="main-content" class="hero">
         <div class="hero-backdrop" aria-hidden="true">
@@ -166,20 +157,11 @@
         </div>
     </section>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <span class="brand-mark" aria-hidden="true">N</span>
-                <div>
-                    <strong>Northline Marketing</strong>
-                    <span>Strategy &amp; growth consulting</span>
-                </div>
-            </div>
-            <nav class="footer-nav" aria-label="Footer">
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="footer-copy">© {{ date('Y') }} Northline Marketing. All rights reserved.</p>
-        </div>
-    </footer>
+    <x-frontend.site-footer
+        :links="[
+            ['label' => 'Services', 'href' => '#services'],
+            ['label' => 'Contact', 'href' => '#contact'],
+            ['label' => 'Careers', 'href' => route('recruit')],
+        ]"
+    />
 </x-layouts.public>

@@ -116,6 +116,92 @@ class DatabaseSeeder extends Seeder
                     ],
                 ],
             ],
+            'recruit.hero_stats' => [
+                'description' => 'Recruit page hero panel stats for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    ['value' => '14', 'label' => 'Teammates'],
+                    ['value' => '2019', 'label' => 'Independent since'],
+                ],
+            ],
+            'recruit.values' => [
+                'description' => 'Recruit page value cards for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Small teams, real ownership',
+                        'body' => 'You will run engagements end to end with two or three colleagues, not a pyramid of reviewers. Your name is on the work.',
+                    ],
+                    [
+                        'title' => 'Craft is the strategy',
+                        'body' => 'We sell thinking that ships. Slides exist to align the room; the deliverable is the change in the numbers.',
+                    ],
+                    [
+                        'title' => 'Time to think',
+                        'body' => 'No utilization targets and no timesheet theater. Focused weeks make better work, so we protect them.',
+                    ],
+                    [
+                        'title' => 'Share in the upside',
+                        'body' => 'Profit share twice a year and a learning budget you set yourself. Growth should not need a form.',
+                    ],
+                ],
+            ],
+            'recruit.perks' => [
+                'description' => 'Recruit page perks strip for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    'Profit share, twice a year',
+                    'Health, dental & vision',
+                    '30 days paid time off',
+                    '$2,500 learning budget',
+                    'Hybrid, Chicago HQ',
+                    'Home office stipend',
+                ],
+            ],
+            'recruit.roles' => [
+                'description' => 'Recruit page open roles list for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Senior Growth Strategist',
+                        'team' => 'Strategy',
+                        'type' => 'Full-time',
+                        'location' => 'Chicago or remote (US)',
+                        'body' => 'Lead client engagements from diagnosis through launch. You will own the narrative, the plan, and the weekly cadence with client teams.',
+                    ],
+                    [
+                        'title' => 'Performance Marketing Lead',
+                        'team' => 'Campaigns',
+                        'type' => 'Full-time',
+                        'location' => 'Chicago, hybrid',
+                        'body' => 'Run paid social and search programs end to end, from media plan to creative testing to the report the CEO actually reads.',
+                    ],
+                    [
+                        'title' => 'Marketing Analyst',
+                        'team' => 'Analytics',
+                        'type' => 'Full-time',
+                        'location' => 'Remote (US)',
+                        'body' => 'Build the dashboards and attribution views behind every recommendation. SQL and curiosity required; agency experience optional.',
+                    ],
+                ],
+            ],
+            'recruit.steps' => [
+                'description' => 'Recruit page hiring process steps for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Intro call',
+                        'body' => 'A 30-minute conversation about your work and what you want next. No whiteboard puzzles.',
+                    ],
+                    [
+                        'title' => 'Craft exercise',
+                        'body' => 'A paid mini-brief drawn from a real past project, capped at four hours, reviewed with the team who wrote it.',
+                    ],
+                    [
+                        'title' => 'Team conversations',
+                        'body' => 'Meet the people you would work with. Two rounds, one week, and the same questions every time.',
+                    ],
+                    [
+                        'title' => 'Offer',
+                        'body' => 'We share the full package in writing and connect you with a future teammate before you decide.',
+                    ],
+                ],
+            ],
         ];
     }
 }
