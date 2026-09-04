@@ -1,5 +1,5 @@
 <x-layouts.public
-    title="Northline Marketing — Strategy & Growth Consulting"
+    title="GPT6"
     description="Northline helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
     hide-header
     body-class="home-page"
