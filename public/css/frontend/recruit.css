@@ -1,0 +1,361 @@
+/* Recruit (careers) page sections. Shared brand chrome lives in marketing.css. */
+
+.hero {
+    position: relative;
+    z-index: var(--z-content);
+    padding: 80px 0 96px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 60% 50% at 90% 8%, rgba(168, 98, 74, 0.09), transparent 60%),
+        radial-gradient(ellipse 45% 40% at 0% 100%, rgba(28, 36, 48, 0.05), transparent 55%);
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: center;
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-photo {
+    margin: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transform: rotate(1deg);
+}
+
+.hero-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.hero-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.hero-facts > div {
+    padding: 20px 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-raised);
+}
+
+.fact-value {
+    display: block;
+    font-family: var(--serif);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--accent-dark);
+    font-variant-numeric: tabular-nums;
+}
+
+.fact-label {
+    display: block;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.benefits-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.benefits-layout .section-head {
+    position: sticky;
+    top: 108px;
+    margin-bottom: 0;
+}
+
+.benefit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+}
+
+.benefit-row {
+    padding: 26px 0;
+}
+
+.benefit-row + .benefit-row {
+    border-top: 1px solid var(--line);
+}
+
+.benefit-row h3 {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.benefit-row .benefit-body,
+.benefit-row .markdown-text--block p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+}
+
+.role-list {
+    border-top: 1px solid var(--line);
+}
+
+.role-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px 40px;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.role-row h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    transition: color 0.2s ease;
+}
+
+.role-row:hover h3 {
+    color: var(--accent-dark);
+}
+
+.role-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 12px;
+}
+
+.role-chip {
+    padding: 5px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--surface-raised);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.role-summary {
+    max-width: 44rem;
+    color: var(--ink-soft);
+    font-size: 15px;
+}
+
+.role-apply {
+    flex-shrink: 0;
+}
+
+.roles-footnote {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.roles-footnote a {
+    color: var(--accent-dark);
+    font-weight: 600;
+}
+
+.roles-footnote a:focus-visible {
+    outline: none;
+    border-radius: 4px;
+    box-shadow: var(--focus-ring);
+}
+
+.process-head {
+    margin-bottom: 40px;
+}
+
+.voice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.voice {
+    padding: 32px;
+    border-radius: var(--radius);
+    background: var(--surface-raised);
+    border-top: 3px solid var(--line);
+    box-shadow: inset 0 0 0 1px var(--line);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.voice:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.voice--featured {
+    border-top-color: var(--accent);
+}
+
+.voice p {
+    font-family: var(--serif);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 20px;
+    text-wrap: pretty;
+}
+
+.voice--featured p {
+    font-size: 26px;
+}
+
+.voice footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 14px;
+}
+
+.voice strong {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.voice span {
+    color: var(--muted);
+}
+
+.join-card {
+    display: grid;
+    grid-template-columns: 1.2fr auto;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 52px;
+    border-radius: var(--radius-lg);
+    background:
+        radial-gradient(ellipse 80% 100% at 100% 50%, rgba(168, 98, 74, 0.08), transparent 55%),
+        var(--surface-muted);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+}
+
+.join-card h2 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.03em;
+    margin-bottom: 14px;
+    text-wrap: balance;
+}
+
+.join-card .section-lead {
+    color: var(--ink-soft);
+}
+
+.join-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.join-card .btn.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.join-card .btn.btn-primary:hover {
+    background: var(--accent-dark);
+    color: #fff;
+}
+
+.join-note {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .benefits-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .benefits-layout .section-head {
+        position: static;
+        margin-bottom: 0;
+    }
+
+    .join-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero {
+        padding-top: 56px;
+    }
+
+    .hero-grid {
+        width: min(1200px, calc(100% - 32px));
+    }
+
+    .hero-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .role-row {
+        grid-template-columns: 1fr;
+    }
+
+    .role-apply {
+        width: 100%;
+    }
+
+    .join-card {
+        padding: 32px 28px;
+    }
+
+    .join-actions {
+        width: 100%;
+    }
+
+    .join-actions .btn {
+        width: 100%;
+    }
+}

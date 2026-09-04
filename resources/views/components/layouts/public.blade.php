@@ -3,7 +3,8 @@
     'description' => null,
     'hideHeader' => false,
     'bodyClass' => '',
-    'homePage' => false,
+    'marketing' => false,
+    'styles' => [],
 ])
 
 <!doctype html>
@@ -16,11 +17,14 @@
     @if (filled($description))
         <meta name="description" content="{{ $description }}">
     @endif
-    @if ($homePage)
+    @if ($marketing)
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/frontend/home.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/frontend/marketing.css') }}">
+        @foreach ($styles as $style)
+            <link rel="stylesheet" href="{{ asset($style) }}">
+        @endforeach
     @else
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet">
@@ -51,8 +55,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
-    @if ($homePage)
-        <script src="{{ asset('js/home.js') }}"></script>
+    @if ($marketing)
+        <script src="{{ asset('js/marketing.js') }}"></script>
     @else
         <script src="{{ asset('js/site.js') }}"></script>
     @endif

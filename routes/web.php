@@ -23,6 +23,17 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+Route::get('/recruit', function () {
+    return view('frontend.recruit', [
+        'collections' => PageContent::collectionsForPage('recruit', [
+            'benefits',
+            'roles',
+            'process',
+            'testimonials',
+        ]),
+    ]);
+})->name('recruit');
+
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('guest')->group(function () {
         Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');

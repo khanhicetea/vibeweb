@@ -116,6 +116,96 @@ class DatabaseSeeder extends Seeder
                     ],
                 ],
             ],
+            'recruit.benefits' => [
+                'description' => 'Careers page benefit rows for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Ownership from day one',
+                        'body' => 'You run real engagements in your first month, with partners close enough to unblock you and far enough to let you work.',
+                    ],
+                    [
+                        'title' => 'Senior peers only',
+                        'body' => 'No account layers and no timesheet theater. Everyone here plans, sells, and ships client work.',
+                    ],
+                    [
+                        'title' => 'Sustainable pace',
+                        'body' => 'Core hours, meeting-light Wednesdays, and summer Fridays. Consulting without the burnout math.',
+                    ],
+                    [
+                        'title' => 'A learning budget you actually spend',
+                        'body' => 'Courses, conferences, and tools funded every year. No approval gauntlet, no receipts theater.',
+                    ],
+                    [
+                        'title' => 'Shared upside',
+                        'body' => 'Every full-time teammate shares in referral and retention bonuses, with a clear path to partner.',
+                    ],
+                ],
+            ],
+            'recruit.roles' => [
+                'description' => 'Careers page open role rows for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Growth Lead',
+                        'type' => 'Full-time',
+                        'location' => 'Chicago or remote (US)',
+                        'summary' => 'Own three to four retainer clients end to end: positioning, paid and lifecycle programs, and the weekly metric review.',
+                    ],
+                    [
+                        'title' => 'Senior Content Strategist',
+                        'type' => 'Full-time',
+                        'location' => 'Remote (US)',
+                        'summary' => 'Turn client positioning into editorial systems — topic clusters, briefs, and content that sales actually forwards.',
+                    ],
+                    [
+                        'title' => 'Marketing Analytics Manager',
+                        'type' => 'Full-time',
+                        'location' => 'Chicago or remote (US)',
+                        'summary' => 'Stand up attribution and executive dashboards our clients check without being asked to.',
+                    ],
+                    [
+                        'title' => 'Brand Design Partner',
+                        'type' => 'Contract',
+                        'location' => 'Remote',
+                        'summary' => 'Embed with strategy sprints to ship identity systems, landing pages, and campaign creative.',
+                    ],
+                ],
+            ],
+            'recruit.process' => [
+                'description' => 'Careers page hiring process steps for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'title' => 'Intro call',
+                        'body' => 'Thirty minutes with a partner about what you want next — no whiteboard, no trick questions.',
+                    ],
+                    [
+                        'title' => 'Craft exercise',
+                        'body' => 'A scoped, paid exercise of two to three hours modeled on real client work. We share feedback either way.',
+                    ],
+                    [
+                        'title' => 'Team deep-dive',
+                        'body' => 'Ninety minutes with the people you would work with daily. Bring hard questions about how we run engagements.',
+                    ],
+                    [
+                        'title' => 'Offer',
+                        'body' => 'A straight answer within five business days, with compensation up front and an onboarding plan attached.',
+                    ],
+                ],
+            ],
+            'recruit.testimonials' => [
+                'description' => 'Careers page team quotes for resources/views/frontend/recruit.blade.php.',
+                'value' => [
+                    [
+                        'quote' => 'I joined for the client list and stayed for the ownership. Month one I was leading a launch sprint — with backup, never with babysitting.',
+                        'name' => 'Priya Natarajan',
+                        'role' => 'Growth Lead, since 2021',
+                    ],
+                    [
+                        'quote' => "It's the first consulting job where the pace is planned. We scope honestly, we staff lightly, and nobody performs busyness.",
+                        'name' => 'Dan Okafor',
+                        'role' => 'Analytics Manager, since 2022',
+                    ],
+                ],
+            ],
         ];
     }
 }

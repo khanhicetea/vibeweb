@@ -2,8 +2,9 @@
     title="Northline Marketing — Strategy & Growth Consulting"
     description="Northline helps founders and marketing teams sharpen positioning, build campaigns that convert, and measure what moves revenue."
     hide-header
-    body-class="home-page"
-    home-page
+    body-class="marketing-page"
+    marketing
+    :styles="['css/frontend/home.css']"
 >
     <a class="skip-link" href="#main-content">Skip to content</a>
 
@@ -19,6 +20,7 @@
                 <a href="#services" data-section="services">Marketing Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
                 <a href="#results" data-section="results">Results</a>
+                <a href="{{ route('recruit') }}">Careers</a>
                 <a href="#contact" data-section="contact">Contact</a>
             </nav>
             <div class="header-actions">
@@ -178,6 +180,7 @@
             <nav class="footer-nav" aria-label="Footer">
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
+                <a href="{{ route('recruit') }}">Careers</a>
             </nav>
             <p class="footer-copy">© {{ date('Y') }} Northline Marketing. All rights reserved.</p>
         </div>

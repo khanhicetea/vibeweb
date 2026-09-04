@@ -72,6 +72,10 @@ class PageContentController extends Controller
             'home.steps' => 'steps',
             'home.stats' => 'stats',
             'home.testimonials' => 'testimonials',
+            'recruit.benefits' => 'services',
+            'recruit.roles' => 'roles',
+            'recruit.process' => 'steps',
+            'recruit.testimonials' => 'testimonials',
             default => null,
         };
     }
@@ -101,6 +105,13 @@ class PageContentController extends Controller
                 'items.*.name' => ['nullable', 'string', 'max:80'],
                 'items.*.role' => ['nullable', 'string', 'max:120'],
             ],
+            'roles' => [
+                'items' => ['array', 'max:12'],
+                'items.*.title' => ['nullable', 'string', 'max:90'],
+                'items.*.type' => ['nullable', 'string', 'max:40'],
+                'items.*.location' => ['nullable', 'string', 'max:80'],
+                'items.*.summary' => ['nullable', 'string', 'max:240'],
+            ],
             default => [
                 'items' => ['array'],
             ],
@@ -116,6 +127,16 @@ class PageContentController extends Controller
                     'quote' => $item['quote'] ?? null,
                     'name' => $item['name'] ?? null,
                     'role' => $item['role'] ?? null,
+                ], fn ($value) => filled($value)))
+                ->filter(fn (array $item) => $item !== [])
+                ->values()
+                ->all(),
+            'roles' => collect($items)
+                ->map(fn (array $item) => array_filter([
+                    'title' => $item['title'] ?? null,
+                    'type' => $item['type'] ?? null,
+                    'location' => $item['location'] ?? null,
+                    'summary' => $item['summary'] ?? null,
                 ], fn ($value) => filled($value)))
                 ->filter(fn (array $item) => $item !== [])
                 ->values()
