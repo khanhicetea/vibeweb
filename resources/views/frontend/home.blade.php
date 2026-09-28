@@ -18,7 +18,7 @@
             <nav class="site-nav" id="siteNav" aria-label="Primary">
                 <a href="#services" data-section="services">Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
-                <a href="#results" data-section="results">Results</a>
+                <a href="#results" data-section="results">Result</a>
                 <a href="#contact" data-section="contact">Contact Us</a>
             </nav>
             <div class="header-actions">
