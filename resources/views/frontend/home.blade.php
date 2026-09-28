@@ -19,7 +19,7 @@
                 <a href="#services" data-section="services">Services</a>
                 <a href="#approach" data-section="approach">Approach</a>
                 <a href="#results" data-section="results">Results</a>
-                <a href="#contact" data-section="contact">Contact</a>
+                <a href="#contact" data-section="contact">Contact Us</a>
             </nav>
             <div class="header-actions">
                 <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
